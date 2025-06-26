@@ -1,4 +1,6 @@
 ﻿
+using Dsw2025Tpi.Application.Dtos;
+using Dsw2025Tpi.Application.Exceptions;
 using Dsw2025Tpi.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -29,5 +31,25 @@ public class ProductController : ControllerBase // Hereda de ControllerBase (bas
         return Ok(products);// Retorna código 200 (OK) con la lista de productos
 
     }
-
+    [HttpPost()]
+    public async Task<IActionResult> AddProduct([FromBody] ProductModel.Request request)
+    {
+        try
+        {
+            var product = await _services.AddProduct(request);
+            return Ok(product);
+        }
+        catch (ArgumentException ae)
+        {
+            return BadRequest(ae.Message);
+        }
+        catch (DuplicatedEntityException de)
+        {
+            return Conflict(de.Message);
+        }
+        catch (Exception)
+        {
+            return Problem("Se produjo un error al guardar el producto");
+        }
+    }
 }

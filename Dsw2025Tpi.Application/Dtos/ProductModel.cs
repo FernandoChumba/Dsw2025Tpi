@@ -12,10 +12,10 @@ public record ProductModel
         string InternalCode,
         string Name,
         string Description,
-        decimal CurrentUnitPrice,
-        int StockQuanty
+        decimal Price,
+        int Stock
         );
 
-    public record Responde(Guid id);//para devolver datos del producto
+    public record Response(Guid id);//para devolver datos del producto
 }
 
