@@ -1,7 +1,7 @@
 ﻿using Dsw2025Tpi.Domain.Entities;
 using Dsw2025Tpi.Domain.Interfaces;
 using System.Linq.Expressions;
-
+using Microsoft.EntityFrameworkCore;
 namespace Dsw2025Tpi.Data.Repositories;
 
 public class EfRepository: IRepository
@@ -31,8 +31,8 @@ public class EfRepository: IRepository
     {
         return await Include(_context.Set<T>(), include).FirstOrDefaultAsync(predicate);
     }
-
-    public async Task<IEnumerable<T>?> GetAll<T>(params string[] include) where T : EntityBase
+    
+     public async Task<List<T>?> GetAll<T>(params string[] include) where T : EntityBase
     {
         return await Include(_context.Set<T>(), include).ToListAsync();
     }
@@ -64,4 +64,7 @@ public class EfRepository: IRepository
         }
         return includedQuery;
     }
+
+   
+    
 }

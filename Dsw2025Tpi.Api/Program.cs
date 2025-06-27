@@ -1,4 +1,10 @@
 
+using Dsw2025Tpi.Application.Services;
+using Dsw2025Tpi.Data;
+using Dsw2025Tpi.Data.Repositories;
+using Dsw2025Tpi.Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
+
 namespace Dsw2025Tpi.Api;
 
 public class Program
@@ -14,7 +20,14 @@ public class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
         builder.Services.AddHealthChecks();
-
+        builder.Services.AddScoped<IRepository, EfRepository>(); //scoped para que el contexto tambien sea scoped
+        builder.Services.AddTransient<ProductsManagementServices>();
+        //agregando contexto DB
+        builder.Services.AddDbContext<Dsw2025TpiContext>(options =>
+        {
+            options.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;");
+            
+        });
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.

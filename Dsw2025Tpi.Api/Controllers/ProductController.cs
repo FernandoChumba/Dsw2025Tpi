@@ -2,6 +2,7 @@
 using Dsw2025Tpi.Application.Dtos;
 using Dsw2025Tpi.Application.Exceptions;
 using Dsw2025Tpi.Application.Services;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Dsw2025Tpi.Api.Controllers;
@@ -36,8 +37,9 @@ public class ProductController : ControllerBase // Hereda de ControllerBase (bas
     {
         try
         {
-            var product = await _services.AddProduct(request);
-            return Ok(product);
+            
+            var product = await _services.AddProduct(request);// Llamada al servicio para crear el producto 
+            return Ok(product); //Si es exitoso, retorna 200 OK con el producto creado
         }
         catch (ArgumentException ae)
         {

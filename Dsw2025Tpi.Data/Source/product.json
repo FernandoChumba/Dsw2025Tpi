@@ -1,0 +1,102 @@
+﻿[
+    {
+        "id": "b6e2e2c2-7e2a-4e2e-9b2a-1c2e2e2e2e2e",
+        "sku": "DEF456",
+        "internalCode": "INT-002",
+        "name": "Teclado mecánico",
+        "description": "Teclado mecánico con switches azules y retroiluminación RGB.",
+        "currentUnitPrice": 89.99,
+        "stockQuantity": 35,
+        "IsActive": true
+    },
+    {
+        "id": "c7f3f3d3-8f3b-5f3f-0c3b-2d3f3f3f3f3f",
+        "sku": "GHI789",
+        "internalCode": "INT-003",
+        "name": "Ratón inalámbrico",
+        "description": "Ratón ergonómico inalámbrico con sensor de 16000 DPI.",
+        "currentUnitPrice": 49.99,
+        "stockQuantity": 80,
+        "IsActive": true
+    },
+    {
+        "id": "d8g4g4e4-9g4c-6g4g-1d4c-3e4g4g4g4g4g",
+        "sku": "JKL012",
+        "internalCode": "INT-004",
+        "name": "Monitor 24 pulgadas",
+        "description": "Monitor Full HD con panel IPS y 75Hz de refresco.",
+        "currentUnitPrice": 159.99,
+        "stockQuantity": 15,
+        "IsActive": true
+    },
+    {
+        "id": "e9h5h5f5-0h5d-7h5h-2e5d-4f5h5h5h5h5h",
+        "sku": "MNO345",
+        "internalCode": "INT-005",
+        "name": "Disco duro externo",
+        "description": "Disco duro externo de 1TB, USB 3.0, resistente a golpes.",
+        "currentUnitPrice": 59.99,
+        "stockQuantity": 40,
+        "IsActive": true
+    },
+    {
+        "id": "f0i6i6g6-1i6e-8i6i-3f6e-5g6i6i6i6i6i",
+        "sku": "PQR678",
+        "internalCode": "INT-006",
+        "name": "Auriculares Bluetooth",
+        "description": "Auriculares inalámbricos con cancelación de ruido y 20h de autonomía.",
+        "currentUnitPrice": 79.99,
+        "stockQuantity": 25,
+        "IsActive": true
+    },
+    {
+        "id": "g1j7j7h7-2j7f-9j7j-4g7f-6h7j7j7j7j7j",
+        "sku": "STU901",
+        "internalCode": "INT-007",
+        "name": "Webcam HD",
+        "description": "Cámara web Full HD con micrófono integrado y enfoque automático.",
+        "currentUnitPrice": 45.50,
+        "stockQuantity": 60,
+        "IsActive": true
+    },
+    {
+        "id": "h2k8k8i8-3k8g-0k8k-5h8g-7i8k8k8k8k8k",
+        "sku": "VWX234",
+        "internalCode": "INT-008",
+        "name": "Altavoz inteligente",
+        "description": "Altavoz con asistente de voz integrado y conexión WiFi.",
+        "currentUnitPrice": 99.99,
+        "stockQuantity": 30,
+        "IsActive": true
+    },
+    {
+        "id": "i3l9l9j9-4l9h-1l9l-6i9h-8j9l9l9l9l9l",
+        "sku": "YZA567",
+        "internalCode": "INT-009",
+        "name": "Tableta gráfica",
+        "description": "Tableta digitalizadora con lápiz sensible a la presión.",
+        "currentUnitPrice": 129.99,
+        "stockQuantity": 20,
+        "IsActive": true
+    },
+    {
+        "id": "j4m0m0k0-5m0i-2m0m-7j0i-9k0m0m0m0m0m",
+        "sku": "BCD890",
+        "internalCode": "INT-010",
+        "name": "Cargador inalámbrico",
+        "description": "Base de carga inalámbrica rápida de 15W compatible con Qi.",
+        "currentUnitPrice": 29.99,
+        "stockQuantity": 75,
+        "IsActive": true
+    },
+    {
+        "id": "k5n1n1l1-6n1j-3n1n-8k1j-0l1n1n1n1n1n",
+        "sku": "EFG123",
+        "internalCode": "INT-011",
+        "name": "Mochila para portátil",
+        "description": "Mochila resistente al agua con compartimento para portátil de hasta 15.6 pulgadas.",
+        "currentUnitPrice": 39.99,
+        "stockQuantity": 50,
+        "IsActive": true
+    }
+]
